@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stacy R. Hall – Design B</title>
+<title>Get Involved — Stacy R. Hall</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#1a365d;--gold:#d69e2e;--dark:#0c1b2c;--light:#f0f4f8;--accent:#ff6f61}
@@ -11,85 +11,96 @@
 body{font-family:'Roboto',sans-serif;background:var(--light);color:#333}
 .container{max-width:1150px;margin:auto;padding:0 20px}
 header{background:var(--dark);color:#fff;padding:20px 0}
-nav{display:flex;justify-center:space-around;gap:15px;flex-wrap:wrap}
+nav{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
 nav a{color:#fff;text-decoration:none;padding:10px 16px;border-radius:4px;transition:.2s}
 nav a:hover{background:rgba(255,255,255,.1)}
 nav a.active{background:var(--accent)}
-.hero{background:linear-gradient(135deg,var(--navy),var(--dark));color:#fff;padding:80px 0;position:relative}
-.hero::after{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:url('stacey-headshot.png') center/cover no-repeat;opacity:.15}
-.hero-content{position:relative;z-index:1;max-width:60%}
-.hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(28px,5vw,48px);margin-bottom:20px}
-.hero p{font-size:18px;margin-bottom:30px;line-height:1.5}
-.btn{display:inline-block;padding:12px 24px;border-radius:30px;font-weight:600;text-decoration:none;transition:.2s}
-.btn-primary{background:var(--accent);color:#fff}
-.btn-primary:hover{background:#ff4c4c}
-.btn-outline{border:2px solid #fff;color:#fff}
-.btn-outline:hover{background:#fff;color:var(--dark)}
-.section{padding:60px 0}
-.section h2{font-family:'Montserrat',sans-serif;font-size:32px;color:var(--navy);margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
-.card{background:#fff;border-radius:8px;padding:24px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
-.card h3{font-size:20px;color:var(--navy);margin-bottom:12px}
-.card p{font-size:15px;color:#555}
-.footer{background:var(--dark);color:#fff;padding:40px 0}
-.footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
-.footer a{color:#fff;text-decoration:none;opacity:.8}
-.footer a:hover{opacity:1}
-.social{display:flex;gap:12px;margin-top:12px}
-.social a{font-size:18px;opacity:.8}
-.social a:hover{opacity:1}
-@media(max-width:768px){.hero-content{max-width:100%}.nav{flex-direction:column;align-items:center}}
+.btn-primary{background:var(--accent);color:#fff;padding:10px 20px;border-radius:4px;text-decoration:none;font-weight:600}
+.hero{background:linear-gradient(135deg,var(--navy),var(--dark));color:#fff;padding:60px 0;text-align:center}
+.hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(28px,5vw,44px);margin-bottom:12px}
+.hero p{font-size:18px;opacity:.9}
+.section{padding:50px 0}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;max-width:900px;margin:0 auto}
+.card{background:#fff;border-radius:8px;padding:28px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.card h3{font-family:'Montserrat',sans-serif;font-size:22px;color:var(--navy);margin-bottom:16px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:500;margin-bottom:6px;color:var(--navy)}
+.form-group input{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:16px}
+.checkbox-group{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.events-list{list-style:none}
+.events-list li{padding:10px 0;border-bottom:1px solid #eee}
+.event-date{color:var(--accent);font-weight:600}
+.donate-section{background:var(--navy);color:#fff;padding:50px 0;text-align:center}
+.donate-section h2{font-family:'Montserrat',sans-serif;font-size:28px;margin-bottom:24px}
+.amounts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.amount-btn{padding:14px 20px;border:2px solid #fff;background:transparent;color:#fff;border-radius:4px;font-weight:600;font-size:16px;cursor:pointer;transition:.2s}
+.amount-btn:hover,.amount-btn.selected{background:var(--accent);border-color:var(--accent)}
+footer{background:var(--dark);color:#fff;padding:40px 0;text-align:center}
+.social{display:flex;justify-content:center;gap:20px;margin-top:16px}
+.social a{color:#fff;text-decoration:none;opacity:.8}
+@media(max-width:768px){.grid-2{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header>
-<div class="container">
-<h1>Stacy R. Hall</h1>
-<nav>
-<a href="index.html" class="active">Home</a>
+<header><nav>
+<a href="index.html">Home</a>
 <a href="why-city-council.html">Why City Council</a>
 <a href="issues.html">Issues</a>
 <a href="background.html">Background</a>
-<a href="getinvolved.html">Get Involved</a>
-<a href="getinvolved.html#donate" class="btn btn-primary" style="margin-left:12px;">Donate</a>
-</nav>
-</div>
-</header>
-<section class="hero">
-<div class="container hero-content">
-<h2>Leadership you can trust</h2>
-<p>Stacy R. Hall is dedicated to safe neighborhoods, efficient infrastructure, and top‑quality education for Fairfax families.</p>
-<a href="getinvolved.html" class="btn btn-primary">Join the Movement</a>
-<a href="issues.html" class="btn btn-outline">Read Issues</a>
-</div>
-</section>
+<a href="getinvolved.html" class="active">Get Involved</a>
+<a href="#donate" class="btn-primary">Donate</a>
+</nav></header>
+<section class="hero"><div class="container">
+<h1>Join the Campaign</h1>
+<p>Your voice matters. Here's how you can help.</p>
+</div></section>
 <section class="section"><div class="container">
-<h2>Top Priorities</h2>
-<div class="grid">
-<div class="card"><h3>Infrastructure</h3><p>Modernize roads, improve traffic flow, and fund long‑term maintenance.</p></div>
-<div class="card"><h3>Public Safety</h3><p>Support first responders and launch community safety initiatives.</p></div>
-<div class="card"><h3>Education</h3><p>Partner with schools to provide resources and champion higher outcomes.</p></div>
+<div class="grid-2">
+<div class="card">
+<h3>📬 Volunteer</h3>
+<form>
+<div class="form-group"><label>Name</label><input type="text" placeholder="Your name"></div>
+<div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+<div class="form-group"><label>Phone</label><input type="tel" placeholder="(555) 555-5555"></div>
+<div class="form-group"><label>How can you help?</label>
+<div class="checkbox-group">
+<label><input type="checkbox"> Door knocking</label>
+<label><input type="checkbox"> Phone banking</label>
+<label><input type="checkbox"> Yard sign</label>
+</div>
+</div>
+<button type="submit" style="background:var(--accent);color:#fff;border:none;padding:12px 24px;font-weight:600;cursor:pointer;border-radius:4px;width:100%">Sign Up</button>
+</form>
+</div>
+<div class="card">
+<h3>📅 Events</h3>
+<ul class="events-list">
+<li><span class="event-date">Apr 5</span> — Community Meet & Greet</li>
+<li><span class="event-date">Apr 12</span> — Town Hall</li>
+<li><span class="event-date">Apr 19</span> — Volunteer Training</li>
+<li><span class="event-date">Apr 26</span> — Campaign Rally</li>
+</ul>
+</div>
 </div>
 </div></section>
-<footer class="footer">
-<div class="container">
-<div>
+<section class="donate-section" id="donate"><div class="container">
+<h2>Support the Campaign</h2>
+<div class="amounts">
+<button class="amount-btn">$25</button>
+<button class="amount-btn selected">$50</button>
+<button class="amount-btn">$100</button>
+<button class="amount-btn">$250</button>
+</div>
+<p style="opacity:.8;margin-bottom:20px">Your donation funds outreach, signs, and events.</p>
+<button style="background:var(--accent);color:#fff;border:none;padding:14px 32px;font-weight:600;font-size:16px;cursor:pointer;border-radius:4px">Donate Now</button>
+</div></section>
+<footer><div class="container">
 <strong>Stacy R. Hall for City Council</strong>
-<p>Paid for by Friends of Stacy R. Hall.</p>
-</div>
-<div>
-<strong>Connect</strong>
 <div class="social">
-<a href="https://facebook.com/stacy.j.hall.1" target="_blank">FB</a>
-<a href="https://instagram.com/shall279" target="_blank">IG</a>
-<a href="https://linkedin.com/in/stacyrhall" target="_blank">LI</a>
+<a href="https://www.facebook.com/stacy.j.hall.1" target="_blank">Facebook</a>
+<a href="https://instagram.com/shall279" target="_blank">Instagram</a>
+<a href="https://linkedin.com/in/stacyrhall" target="_blank">LinkedIn</a>
 </div>
-</div>
-<div>
-<img src="stacy-logo.png" alt="Stacy Hall" height="70">
-<img src="moms-demand-action.jpg" alt="Moms Demand Action" height="70" style="margin-left:20px;">
-</div>
-</div>
-</footer>
+</div></footer>
 </body>
 </html>

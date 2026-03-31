@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stacy R. Hall – Design B</title>
+<title>Why City Council — Stacy R. Hall</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#1a365d;--gold:#d69e2e;--dark:#0c1b2c;--light:#f0f4f8;--accent:#ff6f61}
@@ -11,85 +11,63 @@
 body{font-family:'Roboto',sans-serif;background:var(--light);color:#333}
 .container{max-width:1150px;margin:auto;padding:0 20px}
 header{background:var(--dark);color:#fff;padding:20px 0}
-nav{display:flex;justify-center:space-around;gap:15px;flex-wrap:wrap}
+nav{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
 nav a{color:#fff;text-decoration:none;padding:10px 16px;border-radius:4px;transition:.2s}
 nav a:hover{background:rgba(255,255,255,.1)}
 nav a.active{background:var(--accent)}
-.hero{background:linear-gradient(135deg,var(--navy),var(--dark));color:#fff;padding:80px 0;position:relative}
-.hero::after{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:url('stacey-headshot.png') center/cover no-repeat;opacity:.15}
-.hero-content{position:relative;z-index:1;max-width:60%}
-.hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(28px,5vw,48px);margin-bottom:20px}
-.hero p{font-size:18px;margin-bottom:30px;line-height:1.5}
-.btn{display:inline-block;padding:12px 24px;border-radius:30px;font-weight:600;text-decoration:none;transition:.2s}
-.btn-primary{background:var(--accent);color:#fff}
-.btn-primary:hover{background:#ff4c4c}
-.btn-outline{border:2px solid #fff;color:#fff}
-.btn-outline:hover{background:#fff;color:var(--dark)}
+.btn-primary{background:var(--accent);color:#fff;padding:10px 20px;border-radius:4px;text-decoration:none;font-weight:600}
+.hero{background:linear-gradient(135deg,var(--navy),var(--dark));color:#fff;padding:80px 0;text-align:center}
+.hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(28px,5vw,48px);margin-bottom:16px}
+.hero p{font-size:18px;opacity:.9;max-width:600px;margin:0 auto}
 .section{padding:60px 0}
-.section h2{font-family:'Montserrat',sans-serif;font-size:32px;color:var(--navy);margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
-.card{background:#fff;border-radius:8px;padding:24px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
-.card h3{font-size:20px;color:var(--navy);margin-bottom:12px}
-.card p{font-size:15px;color:#555}
-.footer{background:var(--dark);color:#fff;padding:40px 0}
-.footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
-.footer a{color:#fff;text-decoration:none;opacity:.8}
-.footer a:hover{opacity:1}
-.social{display:flex;gap:12px;margin-top:12px}
-.social a{font-size:18px;opacity:.8}
+.section h2{font-family:'Montserrat',sans-serif;font-size:32px;color:var(--navy);margin-bottom:24px;text-align:center}
+.values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin:0 auto}
+.value-card{background:#fff;border-radius:8px;padding:28px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.value-card h3{font-size:20px;color:var(--navy);margin-bottom:12px}
+.value-card p{color:#666;line-height:1.6}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:800px;margin:40px auto 0}
+.gallery img{width:100%;border-radius:8px;height:150px;object-fit:cover}
+footer{background:var(--dark);color:#fff;padding:40px 0;text-align:center}
+.social{display:flex;justify-content:center;gap:20px;margin-top:16px}
+.social a{color:#fff;text-decoration:none;opacity:.8}
 .social a:hover{opacity:1}
-@media(max-width:768px){.hero-content{max-width:100%}.nav{flex-direction:column;align-items:center}}
+@media(max-width:768px){.values-grid,.gallery{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header>
-<div class="container">
-<h1>Stacy R. Hall</h1>
-<nav>
-<a href="index.html" class="active">Home</a>
-<a href="why-city-council.html">Why City Council</a>
+<header><nav>
+<a href="index.html">Home</a>
+<a href="why-city-council.html" class="active">Why City Council</a>
 <a href="issues.html">Issues</a>
 <a href="background.html">Background</a>
 <a href="getinvolved.html">Get Involved</a>
-<a href="getinvolved.html#donate" class="btn btn-primary" style="margin-left:12px;">Donate</a>
-</nav>
-</div>
-</header>
-<section class="hero">
-<div class="container hero-content">
-<h2>Leadership you can trust</h2>
-<p>Stacy R. Hall is dedicated to safe neighborhoods, efficient infrastructure, and top‑quality education for Fairfax families.</p>
-<a href="getinvolved.html" class="btn btn-primary">Join the Movement</a>
-<a href="issues.html" class="btn btn-outline">Read Issues</a>
-</div>
-</section>
+<a href="getinvolved.html#donate" class="btn-primary">Donate</a>
+</nav></header>
+<section class="hero"><div class="container">
+<h1>Why I'm Running</h1>
+<p>Fairfax is my home. I've raised my family here, built my career here, and I want to ensure every resident has the same opportunities.</p>
+</div></section>
 <section class="section"><div class="container">
-<h2>Top Priorities</h2>
-<div class="grid">
-<div class="card"><h3>Infrastructure</h3><p>Modernize roads, improve traffic flow, and fund long‑term maintenance.</p></div>
-<div class="card"><h3>Public Safety</h3><p>Support first responders and launch community safety initiatives.</p></div>
-<div class="card"><h3>Education</h3><p>Partner with schools to provide resources and champion higher outcomes.</p></div>
+<h2>My Values</h2>
+<div class="values-grid">
+<div class="value-card"><h3>🎯 Practical Solutions</h3><p>I focus on what works—not what makes headlines. Real progress comes from listening and finding common ground.</p></div>
+<div class="value-card"><h3>👂 Active Listening</h3><p>Your voice matters. I hold regular town halls and make myself accessible because the best ideas come from the community.</p></div>
+<div class="value-card"><h3>🤝 Collaboration</h3><p>Government works best when we work together. I've built relationships across party lines to get things done for Fairfax.</p></div>
+<div class="value-card"><h3>📊 Data-Informed</h3><p>As a CPA and controller, I bring financial discipline to every decision. We owe it to taxpayers to spend wisely.</p></div>
+</div>
+<h3 style="text-align:center;color:var(--navy);margin:40px 0 20px;font-family:'Montserrat',sans-serif">Out in the Community</h3>
+<div class="gallery">
+<img src="../gallery-photo1.png" alt="Community"><img src="../gallery-photo2.png" alt="Events"><img src="../gallery-photo3.png" alt="Meetings">
 </div>
 </div></section>
-<footer class="footer">
-<div class="container">
-<div>
+<footer><div class="container">
 <strong>Stacy R. Hall for City Council</strong>
-<p>Paid for by Friends of Stacy R. Hall.</p>
-</div>
-<div>
-<strong>Connect</strong>
+<p style="opacity:.7;margin-top:8px">Paid for by Friends of Stacy R. Hall</p>
 <div class="social">
-<a href="https://facebook.com/stacy.j.hall.1" target="_blank">FB</a>
-<a href="https://instagram.com/shall279" target="_blank">IG</a>
-<a href="https://linkedin.com/in/stacyrhall" target="_blank">LI</a>
+<a href="https://www.facebook.com/stacy.j.hall.1" target="_blank">Facebook</a>
+<a href="https://instagram.com/shall279" target="_blank">Instagram</a>
+<a href="https://linkedin.com/in/stacyrhall" target="_blank">LinkedIn</a>
 </div>
-</div>
-<div>
-<img src="stacy-logo.png" alt="Stacy Hall" height="70">
-<img src="moms-demand-action.jpg" alt="Moms Demand Action" height="70" style="margin-left:20px;">
-</div>
-</div>
-</footer>
+</div></footer>
 </body>
 </html>
