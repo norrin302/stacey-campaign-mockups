@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stacy R. Hall for City Council — Design A</title>
+<title>Issues — Stacy R. Hall</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#1a365d;--gold:#d69e2e;--cream:#faf8f5;--text:#2d3748}
@@ -21,128 +21,53 @@ nav a:hover{background:rgba(255,255,255,.05);border-bottom-color:var(--gold)}
 nav a.active{border-bottom-color:var(--gold)}
 .donate-btn{background:var(--gold);color:var(--navy)!important;font-weight:700!important;border-radius:0}
 .donate-btn:hover{background:#f1c65a}
-.hero{background:linear-gradient(135deg,var(--navy) 0%,#2d4a7c 100%);color:#fff;padding:80px 0;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:url('stacey-headshot.png') center right/cover no-repeat;opacity:.15}
-.hero-content{position:relative;z-index:1;max-width:55%}
-.hero-label{text-transform:uppercase;letter-spacing:3px;font-size:12px;color:var(--gold);margin-bottom:16px}
-.hero h2{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,56px);line-height:1.1;margin-bottom:20px}
-.hero p{font-size:18px;opacity:.9;margin-bottom:32px;max-width:50ch}
-.cta-buttons{display:flex;gap:16px}
-.btn{display:inline-block;padding:14px 28px;font-weight:700;text-decoration:none;transition:all .2s}
-.btn-gold{background:var(--gold);color:var(--navy)}
-.btn-gold:hover{background:#f1c65a;transform:translateY(-2px)}
-.btn-outline{border:2px solid #fff;color:#fff}
-.btn-outline:hover{background:#fff;color:var(--navy)}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#2d4a7c 100%);color:#fff;padding:60px 0;text-align:center}
+.hero h2{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,48px);margin-bottom:16px}
+.hero p{font-size:18px;opacity:.9}
 .section{padding:60px 0}
-.section-title{font-family:'Playfair Display',serif;font-size:32px;color:var(--navy);margin-bottom:16px}
-.section-subtitle{color:#718096;margin-bottom:40px;font-size:18px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.issues-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
 .issue-card{background:#fff;padding:32px;border-radius:4px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:4px solid var(--gold)}
-.issue-card h3{font-family:'Playfair Display',serif;font-size:20px;color:var(--navy);margin-bottom:12px}
-.issue-card p{color:#718096;font-size:15px}
-.testimonials{background:var(--navy);color:#fff;padding:60px 0}
-.testimonials h3{font-family:'Playfair Display',serif;font-size:28px;text-align:center;margin-bottom:40px}
-.testimonial-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
-.testimonial{background:rgba(255,255,255,.05);padding:28px;border-radius:4px}
-.testimonial p{font-style:italic;font-size:16px;margin-bottom:16px}
-.testimonial cite{color:var(--gold);font-size:14px}
-.logos{background:#fff;padding:40px 0;text-align:center}
-.logos img{height:70px;margin:0 30px;vertical-align:middle}
+.issue-card h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);margin-bottom:12px}
+.issue-card p{color:#718096;font-size:15px;line-height:1.7}
 footer{background:#0f1a2e;color:#fff;padding:40px 0}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
-.footer-col h4{font-size:16px;margin-bottom:16px;color:var(--gold)}
-.footer-col p,.footer-col a{font-size:14px;color:rgba(255,255,255,.7);text-decoration:none;display:block;margin-bottom:8px}
-.footer-col a:hover{color:#fff}
-.social{display:flex;gap:16px;margin-top:16px}
-.social a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(255,255,255,.1);border-radius:50%;color:#fff;text-decoration:none}
-@media(max-width:768px){.hero-content{max-width:100%}.grid-3,.testimonial-grid,.footer-grid{grid-template-columns:1fr}.header-top nav{display:none}}
+.footer-content{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.social-links{display:flex;gap:16px}
+.social-links a{color:#fff;opacity:.8;text-decoration:none}
+@media(max-width:768px){.issues-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
-<div class="container header-top">
-<a href="index.html" class="brand"><h1>Stacy <span>R. Hall</span></h1></a>
-</div>
+<div class="container header-top"><a href="index.html" class="brand"><h1>Stacy <span>R. Hall</span></h1></a></div>
 <nav style="justify-content:center">
-<a href="index.html" class="active">Home</a>
+<a href="index.html">Home</a>
 <a href="why-city-council.html">Why City Council</a>
-<a href="issues.html">Issues</a>
+<a href="issues.html" class="active">Issues</a>
 <a href="background.html">Background</a>
 <a href="getinvolved.html">Get Involved</a>
 <a href="getinvolved.html#donate" class="donate-btn">Donate</a>
 </nav>
 </header>
-
-<section class="hero">
-<div class="container hero-content">
-<p class="hero-label">Re-Elect 2026</p>
-<h2>Proven Leadership for Fairfax</h2>
-<p>Keeping our neighborhoods safe, our infrastructure reliable, and our schools strong. Stacy R. Hall delivers results through collaboration and fiscal responsibility.</p>
-<div class="cta-buttons">
-<a href="getinvolved.html" class="btn btn-gold">Join the Campaign</a>
-<a href="issues.html" class="btn btn-outline">Read the Issues</a>
-</div>
-</div>
-</section>
-
+<section class="hero"><div class="container">
+<h2>Where Stacy Stands</h2>
+<p>Practical solutions for Fairfax—listening first, acting responsibly.</p>
+</div></section>
 <section class="section"><div class="container">
-<h2 class="section-title">Priorities That Matter</h2>
-<p class="section-subtitle">Practical solutions, not political grandstanding.</p>
-<div class="grid-3">
-<div class="issue-card">
-<h3>Infrastructure & Roads</h3>
-<p>Secured funding for 12 miles of road improvements. Advocating for smarter traffic solutions and pedestrian safety.</p>
-</div>
-<div class="issue-card">
-<h3>Public Safety</h3>
-<p>Supporting our first responders while investing in community-based prevention programs that actually work.</p>
-</div>
-<div class="issue-card">
-<h3>Education & Youth</h3>
-<p>Strong schools make strong neighborhoods. Partnering with FCPS to ensure every child has the resources they need.</p>
-</div>
+<div class="issues-grid">
+<div class="issue-card"><h3>🛣️ Infrastructure & Transportation</h3><p>Stacy championed road repairs and pedestrian safety. Helped secure funding for 12 miles of road improvements and 5 new crosswalks near schools.</p></div>
+<div class="issue-card"><h3>🛡️ Public Safety</h3><p>Supporting first responders with modern equipment and training. Advocates for community policing and neighborhood watch programs.</p></div>
+<div class="issue-card"><h3>🎓 Education & Schools</h3><p>Strong schools mean strong neighborhoods. Partners with FCPS to ensure resources for teachers and student success.</p></div>
+<div class="issue-card"><h3>💼 Economic Development</h3><p>Small businesses are the heart of Fairfax. Supports policies that help local entrepreneurs thrive.</p></div>
+<div class="issue-card"><h3>🌳 Environment & Parks</h3><p>Protecting green spaces and improving parks. Supports sustainable practices for future generations.</p></div>
+<div class="issue-card"><h3>🤝 Community Engagement</h3><p>Transparent, responsive government. Holds regular town halls and ensures residents have a voice.</p></div>
 </div>
 </div></section>
-
-<section class="testimonials"><div class="container">
-<h3>What Community Leaders Say</h3>
-<div class="testimonial-grid">
-<div class="testimonial">
-<p>"Stacy is a calm, steady voice who focuses on outcomes—not headlines. She gets things done."</p>
-<cite>— Civic Association President</cite>
-</div>
-<div class="testimonial">
-<p>"She listens, follows through, and keeps residents informed. That's the kind of representation we need."</p>
-<cite>— Small Business Owner, Downtown Fairfax</cite>
-</div>
-</div>
-</div></section>
-
-<section class="logos"><div class="container">
-<img src="stacy-logo.png" alt="Stacy Hall for Council">
-<img src="moms-demand-action.jpg" alt="Moms Demand Action">
-</div></section>
-
-<footer><div class="container footer-grid">
-<div class="footer-col">
-<h4>Stacy R. Hall for City Council</h4>
-<p>Paid for by Friends of Stacy R. Hall.</p>
-<p>Fairfax, Virginia</p>
-</div>
-<div class="footer-col">
-<h4>Quick Links</h4>
-<a href="index.html">Home</a>
-<a href="issues.html">Issues</a>
-<a href="background.html">Background</a>
-<a href="getinvolved.html">Get Involved</a>
-</div>
-<div class="footer-col">
-<h4>Connect</h4>
-<div class="social">
-<a href="https://facebook.com/stacyrhall" target="_blank">F</a>
-<a href="https://instagram.com/shall279" target="_blank">I</a>
-<a href="https://linkedin.com/in/stacyrhall" target="_blank">L</a>
-</div>
+<footer><div class="container footer-content">
+<div><strong>Stacy R. Hall for City Council</strong><p style="opacity:.7;font-size:14px;margin-top:8px">Paid for by Friends of Stacy R. Hall</p></div>
+<div class="social-links">
+<a href="https://facebook.com/stacy.j.hall.1" target="_blank">Facebook</a>
+<a href="https://instagram.com/shall279" target="_blank">Instagram</a>
+<a href="https://linkedin.com/in/stacyrhall" target="_blank">LinkedIn</a>
 </div>
 </div></footer>
 </body>
