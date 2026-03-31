@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Get Involved — Stacy R. Hall for City Council</title>
 <style>
 :root{--navy:#1a365d;--gold:#d69e2e;--white:#fff;--bg:#f7fafc;--text:#1f2937;--muted:#64748b}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--text)}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
 .container{max-width:1120px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.1);z-index:50}
+header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.1);z-index:50}
 .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .brand h1{font-size:18px;color:var(--navy)}
-nav{display:flex;gap:12px}
-.navlink{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--navy);font-weight:600}
-.btn{display:inline-block;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none}
+.brand p{font-size:12px;color:var(--muted)}
+nav{display:flex;gap:8px;align-items:center}
+.navlink{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--navy);font-weight:600;font-size:14px}
+.navlink:hover{background:rgba(26,54,93,.08)}
+.navlink.active{background:rgba(214,158,46,.15);color:var(--navy)}
+.btn{display:inline-block;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .1s;font-size:14px}
 .btn-primary{background:linear-gradient(135deg,var(--gold),#f1c65a);color:#1b2a41}
-.hero{padding:60px 0 40px;text-align:center}
+.btn-primary:hover{transform:translateY(-1px)}
+.hero{padding:50px 0 30px;text-align:center}
 .hero h2{font-size:clamp(28px,4vw,40px);color:var(--navy);margin-bottom:12px}
+.hero p{color:var(--muted);font-size:18px;max-width:600px;margin:0 auto}
 .section{padding:40px 0}
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
 .card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
@@ -27,52 +32,61 @@ nav{display:flex;gap:12px}
 .form-group input,.form-group select{width:100%;padding:12px;border:1px solid rgba(0,0,0,.12);border-radius:8px;font-size:16px}
 .checkbox-group{display:flex;flex-wrap:wrap;gap:12px}
 .checkbox-group label{display:flex;align-items:center;gap:6px;font-weight:400;cursor:pointer}
-.donate-amounts{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.donate-section{background:linear-gradient(135deg,rgba(26,54,93,.03),rgba(214,158,46,.05));padding:50px 0}
+.donate-amounts{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;justify-content:center}
 .amount-btn{padding:16px 24px;border:2px solid rgba(26,54,93,.2);border-radius:12px;background:#fff;cursor:pointer;font-weight:700;font-size:18px;transition:all .1s}
 .amount-btn:hover,.amount-btn.selected{border-color:var(--gold);background:rgba(214,158,46,.1)}
-.recurring{display:flex;align-items:center;gap:8px;margin-bottom:20px}
-.impact{background:rgba(214,158,46,.1);padding:16px;border-radius:12px;margin-top:20px}
+.recurring{display:flex;align-items:center;gap:8px;margin-bottom:20px;justify-content:center}
+.impact{background:rgba(214,158,46,.1);padding:16px;border-radius:12px;margin-top:20px;max-width:400px;margin-left:auto;margin-right:auto}
 .impact p{font-size:14px;color:var(--navy)}
 .events-list{list-style:none}
 .events-list li{padding:12px 0;border-bottom:1px solid rgba(0,0,0,.06)}
 .events-list li:last-child{border-bottom:none}
 .event-date{font-weight:700;color:var(--gold)}
-footer{padding:40px 0;border-top:1px solid rgba(0,0,0,.1);text-align:center;color:var(--muted);font-size:13px}
-@media(max-width:768px){.grid-2{grid-template-columns:1fr}}
+footer{padding:30px 0;background:var(--navy);color:#fff}
+.footer-content{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.footer-left p{font-size:13px;opacity:.8}
+.social-links{display:flex;gap:16px}
+.social-links a{color:#fff;opacity:.8;text-decoration:none;font-size:14px}
+.social-links a:hover{opacity:1}
+@media(max-width:768px){.grid-2{grid-template-columns:1fr}.topbar{flex-direction:column;gap:12px}nav{flex-wrap:wrap;justify-content:center}}
 </style>
 </head>
 <body>
 <header><div class="container topbar">
-<a href="index.html" class="brand"><h1>Stacy R. Hall</h1></a>
+<a href="index.html" class="brand"><h1>Stacy R. Hall</h1><p>Fairfax City Council • 2026</p></a>
 <nav>
 <a href="index.html" class="navlink">Home</a>
+<a href="why-city-council.html" class="navlink">Why City Council</a>
 <a href="issues.html" class="navlink">Issues</a>
-<a href="getinvolved.html" class="navlink">Get Involved</a>
+<a href="background.html" class="navlink">Background</a>
+<a href="getinvolved.html" class="navlink active">Get Involved</a>
 <a href="#donate" class="btn btn-primary">Donate</a>
 </nav>
 </div></header>
+
 <main>
 <section class="hero"><div class="container">
-<h2>Join the Campaign</h2>
-<p>Your support makes a difference. Volunteer, donate, or spread the word.</p>
+<h2>Get Involved</h2>
+<p>Join our campaign to keep Fairfax moving forward.</p>
 </div></section>
 
 <section class="section"><div class="container">
 <div class="grid-2">
-<div class="card" id="volunteer">
-<h3>🤝 Volunteer</h3>
+<div class="card">
+<h3>📬 Sign Up to Volunteer</h3>
 <form>
 <div class="form-group">
-<label>Name</label>
-<input type="text" placeholder="Your name">
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="Your name">
 </div>
 <div class="form-group">
-<label>Email</label>
-<input type="email" placeholder="your@email.com">
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="your@email.com">
 </div>
 <div class="form-group">
-<label>Phone</label>
-<input type="tel" placeholder="(555) 123-4567">
+<label for="phone">Phone</label>
+<input type="tel" id="phone" placeholder="(555) 555-5555">
 </div>
 <div class="form-group">
 <label>How would you like to help?</label>
@@ -81,48 +95,55 @@ footer{padding:40px 0;border-top:1px solid rgba(0,0,0,.1);text-align:center;colo
 <label><input type="checkbox"> Phone banking</label>
 <label><input type="checkbox"> Event hosting</label>
 <label><input type="checkbox"> Yard sign</label>
-<label><input type="checkbox"> Social media</label>
 </div>
 </div>
 <button type="submit" class="btn btn-primary" style="width:100%">Sign Up</button>
 </form>
 </div>
+<div class="card">
+<h3>📅 Upcoming Events</h3>
+<ul class="events-list">
+<li><span class="event-date">Apr 5</span> — Community Meet & Greet, Fairfax Library</li>
+<li><span class="event-date">Apr 12</span> — Town Hall: Infrastructure Update</li>
+<li><span class="event-date">Apr 19</span> — Volunteer Training Session</li>
+<li><span class="event-date">Apr 26</span> — Campaign Kickoff Rally</li>
+</ul>
+</div>
+</div>
+</div></section>
 
-<div class="card" id="donate">
-<h3>💰 Donate</h3>
-<p style="margin-bottom:16px;color:var(--muted)">Your contribution helps us reach more voters.</p>
+<section class="donate-section" id="donate"><div class="container">
+<h3 style="text-align:center;color:var(--navy);margin-bottom:24px">Support the Campaign</h3>
 <div class="donate-amounts">
 <button class="amount-btn">$25</button>
 <button class="amount-btn">$50</button>
 <button class="amount-btn selected">$100</button>
 <button class="amount-btn">$250</button>
+<button class="amount-btn">$500</button>
 </div>
 <div class="recurring">
 <input type="checkbox" id="recurring">
 <label for="recurring">Make this a monthly contribution</label>
 </div>
-<button class="btn btn-primary" style="width:100%">Donate Now</button>
+<div style="text-align:center">
+<button class="btn btn-primary">Donate Now</button>
+</div>
 <div class="impact">
-<p>💡 <strong>$50</strong> prints 100 yard signs • <strong>$100</strong> reaches 500 voters online • <strong>$250</strong> funds a community event</p>
-</div>
-</div>
-</div>
-</div></section>
-
-<section class="section"><div class="container">
-<div class="card">
-<h3>📅 Upcoming Events</h3>
-<ul class="events-list">
-<li><span class="event-date">Apr 5</span> — Town Hall at Community Center, 7pm</li>
-<li><span class="event-date">Apr 12</span> — Volunteer Training, 10am</li>
-<li><span class="event-date">Apr 19</span> — Meet & Greet at Main Street Cafe, 6pm</li>
-</ul>
+<p><strong>Your impact:</strong> $100 funds 200 door hangers or 4 hours of voter outreach.</p>
 </div>
 </div></section>
 </main>
-<footer><div class="container">
+
+<footer><div class="container footer-content">
+<div class="footer-left">
 <strong>Stacy R. Hall for Fairfax City Council</strong>
 <p>Paid for by Friends of Stacy R. Hall.</p>
+</div>
+<div class="social-links">
+<a href="https://www.facebook.com/stacyrhall" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/shall279" target="_blank">Instagram</a>
+<a href="https://www.linkedin.com/in/stacyrhall" target="_blank">LinkedIn</a>
+</div>
 </div></footer>
 </body>
 </html>
