@@ -1,1 +1,86 @@
-<!DOCTYPE html><html><head><title>Test</title></head><body><h1>Test</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Stacy R. Hall for City Council</title>
+<style>
+:root{--navy:#1a365d;--gold:#d69e2e;--white:#fff;--bg:#f7fafc;--text:#1f2937;--muted:#64748b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.1);z-index:50}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand h1{font-size:18px;color:var(--navy)}
+.brand p{font-size:12px;color:var(--muted)}
+nav{display:flex;gap:12px}
+.navlink{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--navy);font-weight:600}
+.navlink:hover{background:rgba(26,54,93,.06)}
+.btn{display:inline-block;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .1s}
+.btn-primary{background:linear-gradient(135deg,var(--gold),#f1c65a);color:#1b2a41}
+.btn-primary:hover{transform:translateY(-1px)}
+.hero{padding:60px 0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h2{font-size:clamp(32px,5vw,48px);color:var(--navy);margin-bottom:16px;line-height:1.1}
+.hero p{font-size:18px;color:var(--muted);margin-bottom:24px;max-width:60ch}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.portrait{width:280px;height:280px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--navy));margin:0 auto;overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.section{padding:40px 0}
+.section h3{font-size:24px;color:var(--navy);margin-bottom:20px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.08);transition:transform .1s}
+.card:hover{transform:translateY(-2px)}
+.card h4{color:var(--navy);margin-bottom:8px}
+.card p{color:var(--muted);font-size:14px}
+.quote{padding:20px;border-left:4px solid var(--gold);background:linear-gradient(90deg,rgba(214,158,46,.1),#fff);border-radius:0 12px 12px 0;margin-bottom:20px}
+.quote p{font-style:italic;color:rgba(26,54,93,.9)}
+.quote footer{color:var(--muted);font-size:13px;margin-top:8px}
+footer{padding:40px 0;border-top:1px solid rgba(0,0,0,.1);color:var(--muted);font-size:13px}
+@media(max-width:768px){.hero-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="container topbar">
+<a href="#" class="brand"><h1>Stacy R. Hall</h1><p>Fairfax City Council • 2026</p></a>
+<nav>
+<a href="issues.html" class="navlink">Issues</a>
+<a href="getinvolved.html" class="navlink">Get Involved</a>
+<a href="getinvolved.html#donate" class="btn btn-primary">Donate</a>
+</nav>
+</div></header>
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<h2>Re-elect Stacy R. Hall for City Council</h2>
+<p>Focused on safe neighborhoods, reliable infrastructure, and thriving schools—keeping Fairfax a place where families and businesses succeed.</p>
+<div class="cta-row">
+<a href="getinvolved.html" class="btn btn-primary">Get Involved</a>
+<a href="getinvolved.html#donate" class="btn">Donate</a>
+<a href="issues.html" class="btn">Learn More</a>
+</div>
+</div>
+<div class="portrait">
+<img src="stacey-headshot.jpg" alt="Stacy R. Hall">
+</div>
+</div></section>
+<section class="section"><div class="container">
+<h3>Key Priorities</h3>
+<div class="grid-3">
+<div class="card"><h4>🛣️ Infrastructure</h4><p>Fix streets, improve traffic flow, invest in long-term maintenance.</p></div>
+<div class="card"><h4>🛡️ Public Safety</h4><p>Support first responders and modernize neighborhood safety programs.</p></div>
+<div class="card"><h4>🎓 Education</h4><p>Partner with schools to strengthen resources and student outcomes.</p></div>
+</div>
+</div></section>
+<section class="section"><div class="container">
+<h3>Trusted by Community Leaders</h3>
+<div class="quote"><p>"Stacy is a calm, steady voice who focuses on outcomes—not headlines."</p><footer>— Local Civic Association President</footer></div>
+<div class="quote"><p>"She listens, follows through, and keeps residents informed."</p><footer>— Small Business Owner, Downtown Fairfax</footer></div>
+</div></section>
+</main>
+<footer><div class="container">
+<strong>Stacy R. Hall for Fairfax City Council</strong>
+<p>Paid for by Friends of Stacy R. Hall.</p>
+</div></footer>
+</body>
+</html>
