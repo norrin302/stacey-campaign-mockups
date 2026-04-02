@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Stacy R. Hall for City Council</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #f5f2eb;
+            --charcoal: #2d2d2d;
+            --terracotta: #d4785c;
+            --sage: #7a9e7e;
+            --navy: #233a4d;
+            --sand: #e8e3d9;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: rgba(245, 242, 235, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: var(--navy); }
+        .nav-links a.active { color: var(--terracotta); }
+        .hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(3rem, 7vw, 5rem);
+            color: var(--navy);
+        }
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .experience-grid { grid-template-columns: 1fr; }
+        }
+        .exp-card {
+            padding: 2.5rem;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        .exp-card h3 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+        .exp-card .role {
+            color: var(--terracotta);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+        .exp-card p {
+            color: var(--charcoal);
+            opacity: 0.85;
+            line-height: 1.7;
+        }
+        .endorsements {
+            padding: 4rem;
+            background: var(--navy);
+            text-align: center;
+        }
+        .endorsements h3 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2rem;
+            color: var(--cream);
+            margin-bottom: 2rem;
+        }
+        .endorsements img {
+            max-height: 80px;
+            filter: brightness(0) invert(1);
+            opacity: 0.7;
+        }
+        footer {
+            padding: 3rem 4rem;
+            background: var(--charcoal);
+            color: var(--cream);
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .footer-links a {
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .footer-links a:hover { opacity: 1; }
+        footer p { font-size: 0.8rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Stacy Hall</div>
+        <ul class="nav-links">
+            <li><a href="design-2-organic.html">Home</a></li>
+            <li><a href="design-2-about.html">About</a></li>
+            <li><a href="design-2-issues.html">Issues</a></li>
+            <li><a href="design-2-experience.html" class="active">Experience</a></li>
+            <li><a href="design-2-contact.html">Contact</a></li>
+            <li><a href="design-2-donate.html">Donate</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Experience</h1>
+    </section>
+    <section class="experience-grid">
+        <div class="exp-card">
+            <h3>Fairfax City Council</h3>
+            <div class="role">Council Member</div>
+            <p>Serving residents with a focus on responsible budget management, infrastructure investment, and transparent governance.</p>
+        </div>
+        <div class="exp-card">
+            <h3>Veterinary Medical Research Foundation</h3>
+            <div class="role">Controller</div>
+            <p>Managing financial operations for a leading research organization, bringing fiscal discipline and accountability.</p>
+        </div>
+        <div class="exp-card">
+            <h3>Moms Demand Action</h3>
+            <div class="role">Community Advocate</div>
+            <p>Recognized for leadership on community safety issues, working to keep our neighborhoods secure.</p>
+        </div>
+        <div class="exp-card">
+            <h3>Fairfax Public Schools</h3>
+            <div class="role">Parent & Volunteer</div>
+            <p>Active volunteer in local schools, understanding the challenges facing our education system.</p>
+        </div>
+    </section>
+    <section class="endorsements">
+        <h3>Endorsements</h3>
+        <img src="moms-demand-action.jpg" alt="Moms Demand Action">
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/stacy.j.hall.1">Facebook</a>
+            <a href="https://www.instagram.com/shall279">Instagram</a>
+            <a href="https://www.linkedin.com/in/stacyrhall">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Stacy R. Hall for City Council</p>
+    </footer>
+</body>
+</html>

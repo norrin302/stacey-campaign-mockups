@@ -14,7 +14,7 @@
             color: white;
             padding: 4rem 2rem;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
+        .container { max-width: 1400px; margin: 0 auto; }
         h1 {
             font-size: 3rem;
             margin-bottom: 0.5rem;
@@ -29,29 +29,25 @@
         }
         .designs {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
+        }
+        @media (max-width: 1024px) {
+            .designs { grid-template-columns: 1fr; }
         }
         .design-card {
             background: rgba(255,255,255,0.05);
             border-radius: 16px;
             overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
             border: 1px solid rgba(255,255,255,0.1);
         }
-        .design-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
         .preview {
-            height: 250px;
-            background-size: cover;
-            background-position: top center;
+            height: 200px;
             position: relative;
         }
         .preview-1 { background: linear-gradient(135deg, #faf8f5, #e8e3d9); }
-        .preview-2 { background: linear-gradient(135deg, #f5f2eb, #e8e3d9); }
-        .preview-3 { background: linear-gradient(135deg, #0a0a0a, #1a1a1a); }
+        .preview-2 { background: linear-gradient(135deg, #f5f2eb, #7a9e7e); }
+        .preview-3 { background: linear-gradient(135deg, #0a0a0a, #ff5c39); opacity: 0.8; }
         .preview-label {
             position: absolute;
             bottom: 1rem;
@@ -86,18 +82,32 @@
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: white;
-            color: #1a1a2e;
+        .pages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .page-link {
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.1);
+            color: white;
             text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
+            border-radius: 6px;
+            font-size: 0.8rem;
             transition: all 0.3s;
         }
-        .btn:hover {
+        .page-link:hover {
             background: #00d4aa;
+            color: #1a1a2e;
+        }
+        .page-link.main {
+            background: white;
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+        .page-link.main:hover {
+            background: #ff5c39;
             color: white;
         }
         .footer {
@@ -111,54 +121,75 @@
 <body>
     <div class="container">
         <h1>Stacy Hall Campaign</h1>
-        <p class="subtitle">Three distinct website redesign concepts for review</p>
+        <p class="subtitle">Three complete website redesign concepts for review — each with 6 pages</p>
         
         <div class="designs">
             <div class="design-card">
                 <div class="preview preview-1">
-                    <span class="preview-label">Newspaper Editorial</span>
+                    <span class="preview-label">Editorial Newspaper Style</span>
                 </div>
                 <div class="info">
                     <h3>Design 1: Editorial</h3>
-                    <p>Classic newspaper-inspired layout with serif typography, clean borders, and a refined print aesthetic. Emphasizes credibility and tradition.</p>
+                    <p>Classic newspaper-inspired layout with DM Serif Display typography, clean borders, and a refined print aesthetic. Emphasizes credibility and tradition.</p>
                     <div class="tags">
                         <span class="tag">DM Serif Display</span>
                         <span class="tag">Editorial</span>
                         <span class="tag">Classic</span>
                     </div>
-                    <a href="design-1-editorial.html" class="btn">View Design →</a>
+                    <div class="pages">
+                        <a href="design-1-editorial.html" class="page-link main">Home</a>
+                        <a href="design-1-about.html" class="page-link">About</a>
+                        <a href="design-1-issues.html" class="page-link">Issues</a>
+                        <a href="design-1-experience.html" class="page-link">Experience</a>
+                        <a href="design-1-contact.html" class="page-link">Contact</a>
+                        <a href="design-1-donate.html" class="page-link">Donate</a>
+                    </div>
                 </div>
             </div>
             
             <div class="design-card">
                 <div class="preview preview-2">
-                    <span class="preview-label">Organic Modern</span>
+                    <span class="preview-label">Organic Modern Style</span>
                 </div>
                 <div class="info">
                     <h3>Design 2: Organic</h3>
-                    <p>Warm, approachable design with soft shapes, natural colors, and gentle animations. Creates a friendly, community-focused feel.</p>
+                    <p>Warm, approachable design with Instrument Serif, soft shapes, natural terracotta/sage colors, and gentle animations. Creates a friendly, community-focused feel.</p>
                     <div class="tags">
                         <span class="tag">Instrument Serif</span>
                         <span class="tag">Organic</span>
                         <span class="tag">Warm</span>
                     </div>
-                    <a href="design-2-organic.html" class="btn">View Design →</a>
+                    <div class="pages">
+                        <a href="design-2-organic.html" class="page-link main">Home</a>
+                        <a href="design-2-about.html" class="page-link">About</a>
+                        <a href="design-2-issues.html" class="page-link">Issues</a>
+                        <a href="design-2-experience.html" class="page-link">Experience</a>
+                        <a href="design-2-contact.html" class="page-link">Contact</a>
+                        <a href="design-2-donate.html" class="page-link">Donate</a>
+                    </div>
                 </div>
             </div>
             
             <div class="design-card">
                 <div class="preview preview-3">
-                    <span class="preview-label">Bold Brutalist</span>
+                    <span class="preview-label">Bold Brutalist Style</span>
                 </div>
                 <div class="info">
                     <h3>Design 3: Bold</h3>
-                    <p>High-contrast, modern design with bold typography, dark theme, and energetic animations. Makes a memorable, contemporary statement.</p>
+                    <p>High-contrast, modern dark theme with Syne + Space Grotesk fonts, animated grid background, and bold typography. Makes a memorable, contemporary statement.</p>
                     <div class="tags">
                         <span class="tag">Syne</span>
                         <span class="tag">Brutalist</span>
                         <span class="tag">Modern</span>
                     </div>
-                    <a href="design-3-brutalist.html" class="btn">View Design →</a>
+                    <div class="pages">
+                        <a href="design-3-brutalist.html" class="page-link main">Home</a>
+                        <a href="design-3-about.html" class="page-link">About</a>
+                        <a href="design-3-issues.html" class="page-link">Issues</a>
+                        <a href="design-3-experience.html" class="page-link">Experience</a>
+                        <a href="design-3-contact.html" class="page-link">Contact</a>
+                        <a href="design-3-donate.html" class="page-link">Donate</a>
+                    </div>
                 </div>
             </div>
         </div>

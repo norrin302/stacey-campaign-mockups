@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Stacy R. Hall for City Council</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #f5f2eb;
+            --charcoal: #2d2d2d;
+            --terracotta: #d4785c;
+            --sage: #7a9e7e;
+            --navy: #233a4d;
+            --sand: #e8e3d9;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: rgba(245, 242, 235, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: var(--navy); }
+        .nav-links a.active { color: var(--terracotta); }
+        .hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(3rem, 7vw, 5rem);
+            color: var(--navy);
+        }
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .contact-section { grid-template-columns: 1fr; }
+        }
+        .contact-info h3 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2rem;
+            color: var(--navy);
+            margin-bottom: 2rem;
+        }
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
+        .contact-item label {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--charcoal);
+            opacity: 0.6;
+            margin-bottom: 0.25rem;
+        }
+        .contact-item a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .contact-item a:hover { color: var(--terracotta); }
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        .contact-form h3 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--sand);
+            background: var(--cream);
+            font-family: inherit;
+            font-size: 1rem;
+            border-radius: 12px;
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: var(--terracotta);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover { background: var(--navy); }
+        footer {
+            padding: 3rem 4rem;
+            background: var(--charcoal);
+            color: var(--cream);
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .footer-links a {
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .footer-links a:hover { opacity: 1; }
+        footer p { font-size: 0.8rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Stacy Hall</div>
+        <ul class="nav-links">
+            <li><a href="design-2-organic.html">Home</a></li>
+            <li><a href="design-2-about.html">About</a></li>
+            <li><a href="design-2-issues.html">Issues</a></li>
+            <li><a href="design-2-experience.html">Experience</a></li>
+            <li><a href="design-2-contact.html" class="active">Contact</a></li>
+            <li><a href="design-2-donate.html">Donate</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Get In Touch</h1>
+    </section>
+    <section class="contact-section">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+                <label>Email</label>
+                <a href="mailto:stacy@stacyhallforcouncil.com">stacy@stacyhallforcouncil.com</a>
+            </div>
+            <div class="contact-item">
+                <label>Phone</label>
+                <a href="tel:+1-703-555-0123">(703) 555-0123</a>
+            </div>
+            <div class="contact-item">
+                <label>Facebook</label>
+                <a href="https://www.facebook.com/stacy.j.hall.1">facebook.com/stacy.j.hall.1</a>
+            </div>
+            <div class="contact-item">
+                <label>Instagram</label>
+                <a href="https://www.instagram.com/shall279">@shall279</a>
+            </div>
+            <div class="contact-item">
+                <label>LinkedIn</label>
+                <a href="https://www.linkedin.com/in/stacyrhall">linkedin.com/in/stacyrhall</a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Send a Message</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/stacy.j.hall.1">Facebook</a>
+            <a href="https://www.instagram.com/shall279">Instagram</a>
+            <a href="https://www.linkedin.com/in/stacyrhall">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Stacy R. Hall for City Council</p>
+    </footer>
+</body>
+</html>

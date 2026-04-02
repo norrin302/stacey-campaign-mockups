@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Stacy | Fairfax City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #f5f2eb;
+            --charcoal: #2d2d2d;
+            --terracotta: #d4785c;
+            --sage: #7a9e7e;
+            --navy: #233a4d;
+            --sand: #e8e3d9;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            font-weight: 400;
+            overflow-x: hidden;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: rgba(245, 242, 235, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--navy);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover { color: var(--navy); }
+        .nav-links a.active { color: var(--terracotta); }
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(3rem, 7vw, 5rem);
+            line-height: 1.1;
+            font-weight: 400;
+            color: var(--navy);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--charcoal);
+            opacity: 0.8;
+            max-width: 500px;
+            margin: 1rem auto 0;
+        }
+        .bio-section {
+            padding: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        @media (max-width: 968px) {
+            .bio-grid { grid-template-columns: 1fr; text-align: center; }
+            .bio-image { margin: 0 auto; }
+        }
+        .bio-image {
+            width: 300px;
+            height: 380px;
+            background: var(--sand);
+            border-radius: 150px 150px 20px 20px;
+            overflow: hidden;
+            box-shadow: 20px 20px 60px rgba(35, 58, 77, 0.15);
+        }
+        .bio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .bio-content h2 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2.5rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+        .bio-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--charcoal);
+            opacity: 0.85;
+            margin-bottom: 1.5rem;
+        }
+        .timeline {
+            padding: 4rem;
+            background: var(--navy);
+            color: var(--cream);
+        }
+        .timeline h3 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline-item {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+        .timeline-item .year {
+            color: var(--terracotta);
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .timeline-item h4 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.4rem;
+            margin: 0.5rem 0;
+        }
+        .timeline-item p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+        footer {
+            padding: 3rem 4rem;
+            background: var(--charcoal);
+            color: var(--cream);
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .footer-links a {
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .footer-links a:hover { opacity: 1; }
+        footer p {
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Stacy Hall</div>
+        <ul class="nav-links">
+            <li><a href="design-2-organic.html">Home</a></li>
+            <li><a href="design-2-about.html" class="active">About</a></li>
+            <li><a href="design-2-issues.html">Issues</a></li>
+            <li><a href="design-2-experience.html">Experience</a></li>
+            <li><a href="design-2-contact.html">Contact</a></li>
+            <li><a href="design-2-donate.html">Donate</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div>
+            <h1>About Stacy</h1>
+            <p>A lifetime of service to Fairfax</p>
+        </div>
+    </section>
+    <section class="bio-section">
+        <div class="bio-grid">
+            <div class="bio-image">
+                <img src="stacey-headshot.png" alt="Stacy R. Hall">
+            </div>
+            <div class="bio-content">
+                <h2>A Steady Voice for Our Community</h2>
+                <p>Stacy R. Hall has dedicated her career to serving the Fairfax community. As Controller at the Veterinary Medical Research Foundation, she brings financial expertise and careful stewardship to every decision.</p>
+                <p>Elected to Fairfax City Council, Stacy has been a consistent advocate for responsible development, quality education, and neighborhood safety. She believes in listening first, acting with purpose, and always putting community needs ahead of politics.</p>
+                <p>Stacy and her family have called Fairfax home for over two decades. She understands what makes this community special—and what it takes to keep it that way.</p>
+            </div>
+        </div>
+    </section>
+    <section class="timeline">
+        <h3>Experience & Service</h3>
+        <div class="timeline-grid">
+            <div class="timeline-item">
+                <div class="year">Present</div>
+                <h4>City Council Member</h4>
+                <p>Serving Fairfax residents with a focus on infrastructure, public safety, and education.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">Present</div>
+                <h4>Controller</h4>
+                <p>Managing financial operations for a leading veterinary research organization.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2018</div>
+                <h4>Moms Demand Action</h4>
+                <p>Recognized for advocacy on community safety.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2000s</div>
+                <h4>Community Volunteer</h4>
+                <p>Active in local schools and civic organizations.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/stacy.j.hall.1">Facebook</a>
+            <a href="https://www.instagram.com/shall279">Instagram</a>
+            <a href="https://www.linkedin.com/in/stacyrhall">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Stacy R. Hall for City Council</p>
+    </footer>
+</body>
+</html>
