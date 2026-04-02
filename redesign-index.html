@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stacy Hall Campaign - Website Redesign Options</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: white; padding: 4rem 2rem; }
-        .container { max-width: 1400px; margin: 0 auto; }
-        h1 { font-size: 3rem; margin-bottom: 0.5rem; background: linear-gradient(90deg, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .subtitle { color: #888; margin-bottom: 3rem; font-size: 1.1rem; }
-        .designs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-        @media (max-width: 1024px) { .designs { grid-template-columns: 1fr; } }
-        .design-card { background: rgba(255,255,255,0.05); border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
-        .preview { height: 200px; position: relative; }
-        .preview-1 { background: linear-gradient(135deg, #faf8f5, #e8e3d9); }
-        .preview-2 { background: linear-gradient(135deg, #f5f2eb, #7a9e7e); }
-        .preview-3 { background: linear-gradient(135deg, #0a0a0a, #ff5c39); opacity: 0.8; }
-        .preview-label { position: absolute; bottom: 1rem; left: 1rem; padding: 0.5rem 1rem; background: rgba(0,0,0,0.7); border-radius: 8px; font-size: 0.85rem; }
-        .info { padding: 1.5rem; }
-        .info h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
-        .info p { color: #aaa; font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.6; }
-        .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
-        .tag { padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.1); border-radius: 100px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        .pages { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
-        .page-link { padding: 0.5rem 1rem; background: rgba(255,255,255,0.1); color: white; text-decoration: none; border-radius: 6px; font-size: 0.8rem; transition: all 0.3s; }
-        .page-link:hover { background: #00d4aa; color: #1a1a2e; }
-        .page-link.main { background: white; color: #1a1a2e; font-weight: 600; }
-        .page-link.main:hover { background: #ff5c39; color: white; }
-        .footer { margin-top: 4rem; text-align: center; color: #666; font-size: 0.85rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stacy Hall Campaign - Website Redesign Options</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: white; padding: 4rem 2rem; }
+.container { max-width: 1400px; margin: 0 auto; }
+h1 { font-size: 3rem; margin-bottom: 0.5rem; background: linear-gradient(90deg, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.subtitle { color: #888; margin-bottom: 3rem; font-size: 1.1rem; }
+.designs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+@media (max-width: 1024px) { .designs { grid-template-columns: 1fr; } }
+.design-card { background: rgba(255,255,255,0.05); border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+.preview { height: 200px; position: relative; }
+.preview-1 { background: linear-gradient(135deg, #faf8f5, #e8e3d9); }
+.preview-2 { background: linear-gradient(135deg, #f5f2eb, #7a9e7e); }
+.preview-3 { background: linear-gradient(135deg, #0a0a0a, #ff5c39); opacity: 0.8; }
+.preview-label { position: absolute; bottom: 1rem; left: 1rem; padding: 0.5rem 1rem; background: rgba(0,0,0,0.7); border-radius: 8px; font-size: 0.85rem; }
+.info { padding: 1.5rem; }
+.info h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+.info p { color: #aaa; font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.6; }
+.tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.tag { padding: 0.25rem 0.75rem; background: rgba(255,255,255,0.1); border-radius: 100px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.pages { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.page-link { padding: 0.5rem 1rem; background: rgba(255,255,255,0.1); color: white; text-decoration: none; border-radius: 6px; font-size: 0.8rem; transition: all 0.3s; }
+.page-link:hover { background: #00d4aa; color: #1a1a2e; }
+.page-link.main { background: white; color: #1a1a2e; font-weight: 600; }
+.page-link.main:hover { background: #ff5c39; color: white; }
+.footer { margin-top: 4rem; text-align: center; color: #666; font-size: 0.85rem; }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Stacy Hall Campaign</h1>
-        <p class="subtitle">Three complete website redesign concepts for review — each with 6 pages</p>
-        <div class="designs">
-            <div class="design-card">
-                <div class="preview preview-1"><span class="preview-label">Editorial Newspaper Style</span></div>
-                <div class="info">
-                    <h3>Design 1: Editorial</h3>
-                    <p>Classic newspaper-inspired layout with DM Serif Display typography, clean borders, and a refined print aesthetic.</p>
-                    <div class="tags"><span class="tag">DM Serif Display</span><span class="tag">Editorial</span><span class="tag">Classic</span></div>
-                    <div class="pages">
-                        <a href="design-1/index.html" class="page-link main">Home</a>
-                        <a href="design-1/about.html" class="page-link">About</a>
-                        <a href="design-1/priorities.html" class="page-link">Priorities</a>
-                        <a href="design-1/experience.html" class="page-link">Experience</a>
-                        <a href="design-1/get-involved.html" class="page-link">Get Involved</a>
-                        <a href="design-1/donate.html" class="page-link">Donate</a>
-                    </div>
-                </div>
-            </div>
-            <div class="design-card">
-                <div class="preview preview-2"><span class="preview-label">Organic Modern Style</span></div>
-                <div class="info">
-                    <h3>Design 2: Organic</h3>
-                    <p>Warm, approachable design with Instrument Serif, soft shapes, natural terracotta/sage colors, and gentle animations.</p>
-                    <div class="tags"><span class="tag">Instrument Serif</span><span class="tag">Organic</span><span class="tag">Warm</span></div>
-                    <div class="pages">
-                        <a href="design-2/index.html" class="page-link main">Home</a>
-                        <a href="design-2/about.html" class="page-link">About</a>
-                        <a href="design-2/priorities.html" class="page-link">Priorities</a>
-                        <a href="design-2/experience.html" class="page-link">Experience</a>
-                        <a href="design-2/get-involved.html" class="page-link">Get Involved</a>
-                        <a href="design-2/donate.html" class="page-link">Donate</a>
-                    </div>
-                </div>
-            </div>
-            <div class="design-card">
-                <div class="preview preview-3"><span class="preview-label">Bold Brutalist Style</span></div>
-                <div class="info">
-                    <h3>Design 3: Bold</h3>
-                    <p>High-contrast, modern dark theme with Syne + Space Grotesk fonts, animated grid background, and bold typography.</p>
-                    <div class="tags"><span class="tag">Syne</span><span class="tag">Brutalist</span><span class="tag">Modern</span></div>
-                    <div class="pages">
-                        <a href="design-3/index.html" class="page-link main">Home</a>
-                        <a href="design-3/about.html" class="page-link">About</a>
-                        <a href="design-3/priorities.html" class="page-link">Priorities</a>
-                        <a href="design-3/experience.html" class="page-link">Experience</a>
-                        <a href="design-3/get-involved.html" class="page-link">Get Involved</a>
-                        <a href="design-3/donate.html" class="page-link">Donate</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer"><p>&copy; 2026 Stacy R. Hall for City Council • Designs for review</p></div>
-    </div>
+<div class="container">
+<h1>Stacy Hall Campaign</h1>
+<p class="subtitle">Three complete website redesign concepts for review — each with 6 pages</p>
+<div class="designs">
+<div class="design-card">
+<div class="preview preview-1"><span class="preview-label">Editorial Newspaper Style</span></div>
+<div class="info">
+<h3>Design 1: Editorial</h3>
+<p>Classic newspaper-inspired layout with DM Serif Display typography, clean borders, and a refined print aesthetic.</p>
+<div class="tags"><span class="tag">DM Serif Display</span><span class="tag">Editorial</span><span class="tag">Classic</span></div>
+<div class="pages">
+<a href="design-1/index.html" class="page-link main">Home</a>
+<a href="design-1/about.html" class="page-link">About</a>
+<a href="design-1/priorities.html" class="page-link">Priorities</a>
+<a href="design-1/experience.html" class="page-link">Experience</a>
+<a href="design-1/get-involved.html" class="page-link">Get Involved</a>
+<a href="design-1/donate.html" class="page-link">Donate</a>
+</div>
+</div>
+</div>
+<div class="design-card">
+<div class="preview preview-2"><span class="preview-label">Organic Modern Style</span></div>
+<div class="info">
+<h3>Design 2: Organic</h3>
+<p>Warm, approachable design with Instrument Serif, soft shapes, natural terracotta/sage colors.</p>
+<div class="tags"><span class="tag">Instrument Serif</span><span class="tag">Organic</span><span class="tag">Warm</span></div>
+<div class="pages">
+<a href="design-2/index.html" class="page-link main">Home</a>
+<a href="design-2/about.html" class="page-link">About</a>
+<a href="design-2/priorities.html" class="page-link">Priorities</a>
+<a href="design-2/experience.html" class="page-link">Experience</a>
+<a href="design-2/get-involved.html" class="page-link">Get Involved</a>
+<a href="design-2/donate.html" class="page-link">Donate</a>
+</div>
+</div>
+</div>
+<div class="design-card">
+<div class="preview preview-3"><span class="preview-label">Bold Brutalist Style</span></div>
+<div class="info">
+<h3>Design 3: Bold</h3>
+<p>High-contrast, modern dark theme with Syne + Space Grotesk fonts, animated grid background.</p>
+<div class="tags"><span class="tag">Syne</span><span class="tag">Brutalist</span><span class="tag">Modern</span></div>
+<div class="pages">
+<a href="design-3/index.html" class="page-link main">Home</a>
+<a href="design-3/about.html" class="page-link">About</a>
+<a href="design-3/priorities.html" class="page-link">Priorities</a>
+<a href="design-3/experience.html" class="page-link">Experience</a>
+<a href="design-3/get-involved.html" class="page-link">Get Involved</a>
+<a href="design-3/donate.html" class="page-link">Donate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="footer"><p>&copy; 2026 Stacy R. Hall for City Council • Designs for review</p></div>
+</div>
 </body>
 </html>
