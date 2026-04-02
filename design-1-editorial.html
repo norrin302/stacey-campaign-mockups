@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy R. Hall for City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --paper: #faf8f5;
+            --accent: #c45c26;
+            --muted: #6b6b6b;
+            --rule: #e0dcd5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Libre Franklin', sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            font-weight: 400;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Newspaper-style masthead */
+        .masthead {
+            border-bottom: 3px solid var(--ink);
+            padding: 2rem 0 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .masthead::before {
+            content: "FAIRFAX CITY • ELECTION 2026";
+            position: absolute;
+            top: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.65rem;
+            letter-spacing: 0.3em;
+            color: var(--muted);
+        }
+
+        .masthead h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .masthead .tagline {
+            font-style: italic;
+            color: var(--muted);
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Editorial navigation */
+        .nav-rule {
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            padding: 0.75rem 0;
+            margin: 1.5rem 0;
+        }
+
+        .nav-rule ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-rule a {
+            text-decoration: none;
+            color: var(--ink);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-rule a:hover {
+            color: var(--accent);
+        }
+
+        /* Main editorial layout */
+        .edition {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .headline-block {
+            display: grid;
+            grid-template-columns: 2fr 1px 1fr;
+            gap: 2rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        @media (max-width: 768px) {
+            .headline-block {
+                grid-template-columns: 1fr;
+            }
+            .divider {
+                display: none;
+            }
+        }
+
+        .divider {
+            background: var(--rule);
+        }
+
+        .lead-story h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .lead-story .byline {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+
+        .lead-story p {
+            font-size: 1.1rem;
+            color: var(--muted);
+            max-width: 50ch;
+        }
+
+        .sidebar-story {
+            padding-left: 2rem;
+        }
+
+        .sidebar-story h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .sidebar-story p {
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        /* Priority columns */
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        @media (max-width: 768px) {
+            .columns {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .column {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, var(--paper) 100%);
+            border: 1px solid var(--rule);
+        }
+
+        .column .icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .column h4 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .column p {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        /* Quote block */
+        .pullquote {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .pullquote::before {
+            content: '"';
+            font-family: 'DM Serif Display', serif;
+            font-size: 8rem;
+            position: absolute;
+            top: -1rem;
+            left: 0;
+            color: var(--accent);
+            opacity: 0.3;
+            line-height: 1;
+        }
+
+        .pullquote blockquote {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.8rem;
+            font-style: italic;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .pullquote cite {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            font-style: normal;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+        }
+
+        /* Footer */
+        .colophon {
+            border-top: 3px solid var(--ink);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .colophon p {
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        .social-links {
+            margin: 1rem 0;
+        }
+
+        .social-links a {
+            color: var(--ink);
+            margin: 0 0.5rem;
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .masthead { animation: fadeIn 0.8s ease-out; }
+        .headline-block { animation: fadeIn 0.8s ease-out 0.2s both; }
+        .columns { animation: fadeIn 0.8s ease-out 0.4s both; }
+        .pullquote { animation: fadeIn 0.8s ease-out 0.6s both; }
+    </style>
+</head>
+<body>
+    <header class="masthead">
+        <h1>Stacy R. Hall</h1>
+        <p class="tagline">For Fairfax City Council</p>
+    </header>
+
+    <nav class="nav-rule">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#priorities">Priorities</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#endorsements">Endorsements</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#donate" style="color: var(--accent); font-weight: 600;">Donate</a></li>
+        </ul>
+    </nav>
+
+    <main class="edition">
+        <section class="headline-block">
+            <div class="lead-story">
+                <p class="byline">Re-elect Stacy R. Hall</p>
+                <h2>A Steady Voice for Fairfax Families</h2>
+                <p>Focused on safe neighborhoods, reliable infrastructure, and thriving schools—keeping Fairfax a place where families and businesses succeed for generations to come.</p>
+            </div>
+            <div class="divider"></div>
+            <aside class="sidebar-story">
+                <h3>Why I'm Running</h3>
+                <p>"I believe in listening first, acting with purpose, and always putting our community's needs ahead of politics. Fairfax deserves leadership that shows up, follows through, and delivers results."</p>
+                <p style="margin-top: 1rem; font-size: 0.85rem;">— Stacy R. Hall</p>
+            </aside>
+        </section>
+
+        <section class="columns" id="priorities">
+            <article class="column">
+                <div class="icon">🛣️</div>
+                <h4>Infrastructure</h4>
+                <p>Fix streets, improve traffic flow, and invest in long-term maintenance for a connected community that works for everyone.</p>
+            </article>
+            <article class="column">
+                <div class="icon">🛡️</div>
+                <h4>Public Safety</h4>
+                <p>Support first responders and modernize neighborhood safety programs to keep our families secure.</p>
+            </article>
+            <article class="column">
+                <div class="icon">🎓</div>
+                <h4>Education</h4>
+                <p>Partner with schools to strengthen resources and ensure every child has the opportunity to succeed.</p>
+            </article>
+        </section>
+
+        <aside class="pullquote">
+            <blockquote>"Stacy is a calm, steady voice who focuses on outcomes—not headlines."</blockquote>
+            <cite>— Community Leader</cite>
+        </aside>
+
+        <aside class="pullquote">
+            <blockquote>"She listens, follows through, and keeps residents informed."</blockquote>
+            <cite>— Fairfax Resident</cite>
+        </aside>
+    </main>
+
+    <footer class="colophon">
+        <div class="social-links">
+            <a href="https://www.facebook.com/stacy.j.hall.1">Facebook</a>
+            <a href="https://www.instagram.com/shall279">Instagram</a>
+            <a href="https://www.linkedin.com/in/stacyrhall">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Stacy R. Hall for City Council • Paid for by Stacy Hall Campaign</p>
+    </footer>
+</body>
+</html>
