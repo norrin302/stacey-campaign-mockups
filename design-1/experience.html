@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Stacy R. Hall for City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --paper: #faf8f5;
+            --accent: #c45c26;
+            --muted: #6b6b6b;
+            --rule: #e0dcd5;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Libre Franklin', sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            font-weight: 400;
+            line-height: 1.6;
+        }
+        .masthead {
+            border-bottom: 3px solid var(--ink);
+            padding: 2rem 0 1rem;
+            text-align: center;
+        }
+        .masthead h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 400;
+        }
+        .nav-rule {
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            padding: 0.75rem 0;
+            margin: 1.5rem 0;
+        }
+        .nav-rule ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .nav-rule a {
+            text-decoration: none;
+            color: var(--ink);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 500;
+        }
+        .nav-rule a:hover, .nav-rule a.active { color: var(--accent); }
+        .edition {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .page-title h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3rem;
+        }
+        .endorsements {
+            margin: 3rem 0;
+        }
+        .endorsements h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .endorsement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .endorsement-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            padding: 2rem;
+            text-align: center;
+        }
+        .endorsement-card img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .endorsement-card h4 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .endorsement-card p {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+        .quotes-section {
+            margin: 4rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+        }
+        .quotes-section h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .quote-block {
+            max-width: 700px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+        .quote-block blockquote {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .quote-block cite {
+            font-size: 0.85rem;
+            color: var(--muted);
+            font-style: normal;
+        }
+        .colophon {
+            border-top: 3px solid var(--ink);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .social-links a {
+            color: var(--ink);
+            margin: 0 0.5rem;
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .social-links a:hover { color: var(--accent); }
+        .colophon p { font-size: 0.8rem; color: var(--muted); margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <header class="masthead">
+        <h1>Stacy R. Hall</h1>
+    </header>
+
+    <nav class="nav-rule">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="priorities.html">Priorities</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="donate.html" style="color: var(--accent); font-weight: 600;">Donate</a></li>
+        </ul>
+    </nav>
+
+    <main class="edition">
+        <header class="page-title">
+            <h2>Experience & Endorsements</h2>
+        </header>
+
+        <section class="endorsements">
+            <h3>Trusted By</h3>
+            <div class="endorsement-grid">
+                <div class="endorsement-card">
+                    <img src="https://norrin302.github.io/stacey-campaign-mockups/moms-demand-action.jpg" alt="Moms Demand Action">
+                    <h4>Moms Demand Action</h4>
+                    <p>Gun Sense Candidate</p>
+                </div>
+                <div class="endorsement-card">
+                    <h4>Fairfax Firefighters</h4>
+                    <p>Local IAFF Endorsement</p>
+                </div>
+                <div class="endorsement-card">
+                    <h4>Fairfax Education Association</h4>
+                    <p>Recommended Candidate</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quotes-section">
+            <h3>What People Are Saying</h3>
+            
+            <div class="quote-block">
+                <blockquote>"Stacy is a calm, steady voice who focuses on outcomes—not headlines. She gets things done."</blockquote>
+                <cite>— Community Leader</cite>
+            </div>
+            
+            <div class="quote-block">
+                <blockquote>"She listens, follows through, and keeps residents informed. That's exactly what we need."</blockquote>
+                <cite>— Fairfax Resident</cite>
+            </div>
+            
+            <div class="quote-block">
+                <blockquote>"Stacy understands the budget better than anyone. She asks the right questions and won't waste taxpayer money."</blockquote>
+                <cite>— Former Council Member</cite>
+            </div>
+        </section>
+    </main>
+
+    <footer class="colophon">
+        <div class="social-links">
+            <a href="https://www.facebook.com/stacy.j.hall.1">Facebook</a>
+            <a href="https://www.instagram.com/shall279">Instagram</a>
+            <a href="https://www.linkedin.com/in/stacyrhall">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Stacy R. Hall for City Council • Paid for by Stacy Hall Campaign</p>
+    </footer>
+</body>
+</html>
